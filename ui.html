@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Carpentry nester</title>
+  </head>
+  <body>
+    <h1>Carpentry nester</h1>
+
+    <h2>Enter your cutlist pieces below</h2>
+    <form id="cutList">
+        Piece name:
+        <input type="string" id="pieceName">
+        Quantity:
+        <input type="number" id="pieceQuantity" min="1" value="1">
+        Length:
+        <input type="number" id="pieceLength" min="0" value="1">
+        Width:
+        <input type="numer" id="pieceWidth" min="0" value="1">
+        Height:
+        <input type="number" id="pieceHeight" min="0" value="1">
+        <input type="submit" id ="button">
+    </form>
+
+    <h2>Enter stock dimensions</h2>
+    <form id="stockTemplate">
+      Length:
+      <input type="number" id="stockLength" min="0" value="1">
+      Width:
+      <input type="number" id="stockWidth" min="0" value="1">
+      Height:
+      <input type="number" id="stockHeight" min="0" value="1">
+      <input type="submit" id="button">
+    </form>
+
+    <h2>Stock cutlist</h2>
+    <script src="carpentryNesting.js"></script>
+
+
+  </body>
+</html>
