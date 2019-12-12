@@ -1,6 +1,24 @@
+var cutListForm = document.querySelector("#cutListForm"); // Cutlist form
+var cutListRow = document.querySelector("#cutListRow"); // Cutlist entry row
+var cutListMod = document.querySelector("#add"); // Checkbox for cutlist mod
+
+// eventListener for checking add/remove row buttons
+document.querySelector("#add").addEventListener("click", function() {
+  if (cutListMod.checked) {
+    cutListForm.appendChild(cutListRow);
+  }
+});
+// TODO: Add/remove a row to the cutlist form when "add row?" is chekced
+function modCutListRow(e) {
+  if (e.target.nodeName === "INPUT") { // FIXME: Validate for un/checked
+    // Append custListRow to cutListForm
+  }
+}
+
 var stock; /* Template dimensions of uncut lumber to hold best arrangement
               of 'wholePiece's */
 
+// TODO: Create stock object(s) based on #stockForm inputs
 function stock(length, height, width) {
   return new Object
 }
