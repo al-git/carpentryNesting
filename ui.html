@@ -8,8 +8,8 @@
   <body>
     <h1>Carpentry nester</h1>
 
-    <h2>Enter your cutlist pieces below</h2>
-    <form id="cutList">
+    <h2 id="cutListForm">Enter your cutlist pieces:</h2>
+    <form id="cutListRow">
         Piece name:
         <input type="string" id="pieceName">
         Quantity:
@@ -17,26 +17,31 @@
         Length:
         <input type="number" id="pieceLength" min="0" value="1">
         Width:
-        <input type="numer" id="pieceWidth" min="0" value="1">
+        <input type="number" id="pieceWidth" min="0" value="1">
         Height:
         <input type="number" id="pieceHeight" min="0" value="1">
+        <br></br>
+        Add another?  <!-- FIXME: This should float below cutListForm and reset
+                            when checked -->
+        <input type="checkbox" id="add">
+        <br></br>
         <input type="submit" id ="button">
     </form>
 
-    <h2>Enter stock dimensions</h2>
-    <form id="stockTemplate">
+    <h2 id="stockForm">Enter stock dimensions:</h2>
+    <form id="stockRow">
       Length:
       <input type="number" id="stockLength" min="0" value="1">
       Width:
       <input type="number" id="stockWidth" min="0" value="1">
       Height:
       <input type="number" id="stockHeight" min="0" value="1">
+      <br></br>
       <input type="submit" id="button">
     </form>
 
     <h2>Stock cutlist</h2>
     <script src="carpentryNesting.js"></script>
-
 
   </body>
 </html>
